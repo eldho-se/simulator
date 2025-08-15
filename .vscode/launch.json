@@ -1,0 +1,21 @@
+// .vscode/launch.json
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Python: Debug FastAPI (uvicorn)",
+      "type": "debugpy",
+      "request": "launch",
+      "module": "uvicorn",
+      "args": [
+        "main:app",       // module path to your FastAPI app
+        "--reload",       // optional: live‑reload in dev
+        "--host", "127.0.0.1",
+        "--port", "8001"
+      ],
+      "jinja": true,
+      "justMyCode": false,
+      "console": "integratedTerminal"
+    }
+  ]
+}
